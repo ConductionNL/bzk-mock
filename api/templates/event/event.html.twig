@@ -8,8 +8,8 @@
 
 
                 <header class="content__header">
-                    <a class="backlink" href="{{ path("app_pitch_index") }}">Pitches</a>
-                    <h1 class="content__header-title">Pitch</h1>
+                    <a class="backlink" href="{{ path("app_event_index") }}">Events</a>
+                    <h1 class="content__header-title">Event</h1>
 
                 </header>
             </div>
@@ -42,8 +42,8 @@
 
                     <div class="row">
                         <div class="col-md-7">
-                            <h2>Persoon/Organisatie</h2>
-                            <p><em>Schrijver</em></p>
+                            <h2>Organisatie</h2>
+                            <p><em>Organisator</em></p>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut
@@ -54,12 +54,43 @@
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                                 cupidatat
                                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href="{{ path('app_organization_organization') }}" rel="noopener" class="btn btn--primary" target="_blank">Meer lezen <span class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
+                            <a href="{{ path('app_organization_organization') }}" rel="noopener"
+                               class="btn btn--primary" target="_blank">Meer lezen <span
+                                        class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
                         </div>
                         <div class="col-md-5">
                             <img src="https://picsum.photos/200" class="responsive" width="100%">
                         </div>
                     </div>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
+            <div class="content-background">
+                <div class="content">
+
+                    <h2>Leden</h2>
+
+                    <ul class="list list--card list--card-small">
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Lid</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Lid</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
 
