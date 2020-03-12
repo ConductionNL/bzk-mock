@@ -6,25 +6,23 @@ settings:
   registryBase: docker.io/conduction
   projectName: bzk-mock
   name: bzk-mock
-  title: Conduction website
+  title: Developer | Nederland
   version: V.0.1
   description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&#039;'
-  repro: 'https://github.com/ConductionNL/conductionwebsite'
+  repro: 'https://github.com/ConductionNL/bzk-mock'
   domain: developer.conduction.nl  
-  domains:
-    - developer.conduction.nl
   organisationName: Conduction
   email: info@conduction.nl
   country: Netherlands
   state: Noord-Holland
   locality: Amsterdam
   unit: Common-Ground  
-  demo: conduction.nl
+  demo: developer.conduction.nl
   env: dev
   debug: 1
   replicaCount: 1
   corsAllowOrigin: ['*']
-  trustedHosts: '^(.+\.)?conduction\.nl$|localhost'
+  trustedHosts: '^(.+\.)?conduction\.nl$|^(.+\.)?huwelijksplanner\.online$|^(.+\.)?larping\.eu$|^(.+\.)?common-ground\.dev$|^(.+\.)?trouwplanner\.online$|^(.+\.)?zaakonline\.nl$|localhost'
   pullPolicy: Always
   # You will need these proxies on kubernetes
   trustedProxies:

@@ -18,22 +18,39 @@ use App\Service\CommonGroundService;
  * @Route("/organisaties")
  */
 class OrganizationController extends AbstractController
-{
-
-    /**
-     * @Route("/")
-     * @Template
-     */
+{	
+	/**
+	 * @Route("/")
+	 * @Template
+	 */
+	public function dashboardAction()
+	{
+		return [];
+	}
+	
+	/**
+	 * @Route("/index")
+	 * @Template
+	 */
 	public function indexAction()
-    {
-    	return [];
-    }
+	{
+		return [];
+	}
+	
+	/**
+	 * @Route("/me")
+	 * @Template
+	 */
+	public function meAction()
+	{
+		return [];
+	}
 
     /**
-     * @Route("/organisatie")
+     * @Route("/{id}")
      * @Template
      */
-	public function organizationAction()
+	public function viewAction($id)
     {
     	return [];
     }
