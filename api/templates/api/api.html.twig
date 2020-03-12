@@ -6,7 +6,10 @@
         <div class="col-md-12">
             <div class="content">
                 <header class="content__header">
-                    <h1 class="content__header-title">Over API</h1>
+                    <a class="backlink" href="{{ path('app_api_index') }}">API's</a>
+                    <header class="content__header">
+                        <h1 class="content__header-title">Over API</h1>
+                    </header>
                 </header>
             </div><!-- ./content -->
         </div><!-- ./col -->
@@ -15,31 +18,77 @@
     <div class="row theme--small-padding">
 
         <div class="col-md-8">
-            <div class="card">
-                <div class="content-background">
-                    <div class="content">
+            <div class="content-background">
+                <div class="content">
 
-                        <h2>Officia deserunt</h2>
+                    <h2>Officia deserunt</h2>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-                        <div class="donut-chart" id="complicancy-donut-chart">
-                            <h3 class="donut-chart__title">Complicancy</h3>
-                            <div class="donut-chart__chart">
-                                <canvas class="donut-chart__canvas"></canvas>
-                                <div class="donut-chart__inner">€ 2.000,00</div>
-                            </div>
-                            <span class="donut-chart__subtitle">over van € 10.000,00</span>
+                    <div class="donut-chart" id="complicancy-donut-chart">
+                        <h3 class="donut-chart__title">Complicancy</h3>
+                        <div class="donut-chart__chart">
+                            <canvas class="donut-chart__canvas"></canvas>
+                            <div class="donut-chart__inner">€ 2.000,00</div>
+                        </div>
+                        <span class="donut-chart__subtitle">over van € 10.000,00</span>
+                    </div>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
+            <div class="content-background">
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Organisatie</h2>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="{{ path('app_organization_organization') }}" rel="noopener" class="btn btn--primary" target="_blank">Meer lezen <span class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="https://picsum.photos/200" class="responsive" width="100%">
+                        </div>
+                    </div>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
+            <div class="content-background">
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Updates</h2>
+
+                            <ul class="list list--dash">
+                                <li>10-2-2020 Security improved <a href="#">read more</a></li>
+                                <li>10-2-2020 Security improved <a href="#">read more</a></li>
+                                <li>10-2-2020 Security improved <a href="#">read more</a></li>
+                            </ul>
                         </div>
                     </div><!-- ./content -->
                 </div><!-- ./content-background -->
-            </div>
+            </div><!-- ./col -->
         </div><!-- ./col -->
 
         <div class="col-md-4">
@@ -72,40 +121,14 @@
 
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
-        </div><!-- ./col -->
 
-        <div class="col-md-8">
-            <div class="content-background">
-                <div class="content">
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
 
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2>Organisatie</h2>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="col-md-5">
-                            <img src="https://picsum.photos/200" class="responsive" width="100%">
-                        </div>
-                    </div>
-                </div><!-- ./content -->
-            </div><!-- ./content-background -->
-        </div><!-- ./col -->
-
-
-        <div class="col-md-4">
             <div class="content-background background--donkerblauw">
                 <div class="content">
 
-                    <h3>Meld een issue</h3>
+                    <h2>Meld een issue</h2>
                     <form>
                         <div class="input">
                             <label class="input__label" for="name">Naam</label>
@@ -130,33 +153,14 @@
 
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
-        </div><!-- ./col -->
 
-        <div class="col-md-8">
-            <div class="content-background">
-                <div class="content">
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
 
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2>Updates</h2>
-
-                            <ul class="list list--dash">
-                                <li>10-2-2020 Security improved <a href="#">read more</a></li>
-                                <li>10-2-2020 Security improved <a href="#">read more</a></li>
-                                <li>10-2-2020 Security improved <a href="#">read more</a></li>
-                            </ul>
-                        </div>
-                    </div><!-- ./content -->
-                </div><!-- ./content-background -->
-            </div><!-- ./col -->
-        </div><!-- ./col -->
-
-
-        <div class="col-md-4">
             <div class="content-background background--donkerblauw">
                 <div class="content">
 
-                    <h3>API key aanvragen</h3>
+                    <h2>API key aanvragen</h2>
                     <form>
                         <div class="input">
                             <label class="input__label" for="name">Naam</label>
@@ -186,8 +190,8 @@
 
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
-        </div><!-- ./col -->
 
+        </div><!-- ./col -->
     </div><!-- ./row -->
 
     <script>

@@ -13,11 +13,11 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class PitchController
+ * Class OrganisationController
  * @package App\Controller
- * @Route("/pitches")
+ * @Route("/organisaties")
  */
-class PitchController extends AbstractController
+class OrganizationController extends AbstractController
 {
 
     /**
@@ -30,10 +30,10 @@ class PitchController extends AbstractController
     }
 
     /**
-     * @Route("/pitch")
+     * @Route("/organisatie")
      * @Template
      */
-	public function pitchAction()
+	public function organizationAction()
     {
     	return [];
     }
