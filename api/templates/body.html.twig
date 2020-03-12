@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+  {% block body %}
+
+      {% if babsschets is defined %}
+
+      {% include 'widgets/babs/babs_header.html.twig'%}
+
+      {% else %}
+
+      {% include 'header.html.twig' %}
+
+      {% endif %}
+
+{#      <div class="wrapper">#}
+
+          {% block content %}
+
+          {% endblock %}
+
+{#      </div>#}
+
+{#      {% include 'footer.html.twig' %}#}
+
+  {% endblock %}
