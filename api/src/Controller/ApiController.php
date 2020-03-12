@@ -15,12 +15,13 @@ use App\Service\CommonGroundService;
 /**
  * Class ApiController
  * @package App\Controller
+ * @Route("/apis")
  */
 class ApiController extends AbstractController
 {
 
     /**
-     * @Route("/apis")
+     * @Route("/")
      * @Template
      */
 	public function indexAction()
