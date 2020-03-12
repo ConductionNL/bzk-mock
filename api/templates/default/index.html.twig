@@ -3,14 +3,28 @@
 {% block content %}
                     
         <div class="row">
-        	<div class="col-md-9">
+        	<div class="col-md-8">
         		<div class="content-background">
         			<div class="content">
         				Foto !
+						<ul class="list list--card list--card-small">
+							<li class="card card--small">
+								<a href="{{ path('app_organization_organization') }}" class="card__content">
+									<div class="card__thumb"
+										 style="background-image: url('https://picsum.photos/200')"></div>
+									<div class="card__body"><span class="card__title">Event</span>
+										<p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+											cupidatat</p>
+									</div>
+								</a>
+							</li>
+						</ul>
         			</div>
         		</div>
-        	</div>
-        	<div class="col-md-3">
+				<br>
+
+			</div>
+        	<div class="col-md-4">
         		<div class="content-background background--donkerblauw">
         			<div class="content">
         				<h2>Bijeenkomsten</h2>
@@ -25,10 +39,13 @@
         						<a href="#">Onderwijslocaties toevoegen</a>
         					</li>
         				</ul>
+
         			</div>
         		</div>
+				<br>
+
         	</div>
-        </div>            
+        </div>
 
 		<section class="row">
             <div class="col-md-12">
