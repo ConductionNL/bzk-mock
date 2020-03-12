@@ -8,113 +8,93 @@
 
 
                 <header class="content__header">
-
-                    <h1 class="content__header-title">Pitchoverzicht</h1>
+                    <a class="backlink" href="{{ path("app_pitch_index") }}">Pitches</a>
+                    <h1 class="content__header-title">Pitch</h1>
 
                 </header>
             </div>
         </div>
     </section>
 
-    <div class="row theme--large-padding">
+    <div class="row theme--small-padding">
 
         <div class="col-md-8">
-            <div class="content-background">
-                <div class="content" id="#pitch1">
-                    <div class="row">
-                        <h2>Pitch </h2>
-                        <div class="col-md-6">
-                            <img src="https://picsum.photos/300/300">
-                        </div>
-                        <div class="col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
-                                molestie
-                                orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
-                                tempor et
-                                id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
-                                ex. Nam
-                                malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
-                                orci. Nulla
-                                euismod vestibulum eros eu sagittis.</p>
 
-                        </div>
+            <div class="content-background">
+                <div class="content" id="#event1">
+                    <div class="row">
+                        <img src="https://picsum.photos/300/150" class="responsive" width="100%">
+                        <h2>Beschrijving</h2>
+                        <p>Duis hendrerit placerat ligula, placerat volutpat ligula. Nam commodo magna sed suscipit
+                            vehicula. Fusce non elementum nulla. Pellentesque nec hendrerit leo. Fusce cursus posuere
+                            nulla nec hendrerit. Nullam ullamcorper pulvinar odio, vitae varius quam lacinia sit amet.
+                            Donec porttitor volutpat urna. Pellentesque ac scelerisque elit, vel egestas diam.</p>
 
                     </div>
                 </div>
             </div>
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
+            <div class="content-background">
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Persoon/Organisatie</h2>
+                            <p><em>Schrijver</em></p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="{{ path('app_organization_organization') }}" rel="noopener" class="btn btn--primary" target="_blank">Meer lezen <span class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="https://picsum.photos/200" class="responsive" width="100%">
+                        </div>
+                    </div>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
         </div>
         <div class="col-md-4">
+
             <div class="content-background background--donkerblauw">
                 <div class="content">
-                    <h1>Zoeken naar Pitches</h1>
+
+                    <h2>Inschrijven</h2>
                     <form>
-                        <div class="input combobox" id="multiple_combobox">
-
-                            <label class="input__label" for="aanvraagstatus">Zoek en selecteer een of meerdere
-                                Pitches</label>
-                            <div class="input__hint"></div>
-
-                            <ul class="combobox__input input__control input__control--text input__control--xl input__control--select"
-                                id="aanvraagstatus">
-                                <li id="#pitch1" data-id="0">pitch 1</li>
-                                <li id="#pitch2" data-id="1">pitch 2</li>
-                            </ul>
+                        <div class="input">
+                            <label class="input__label" for="name">Naam</label>
+                            <input type="text" class="input__control input__control--text input__control--large">
                         </div>
 
                         <div class="input">
-                            <button type="submit" class="btn btn--primary">Verder</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="content-background background--donkerblauw">
-                <div class="content">
-                    <form method="post" action="#">
-
-                        <h1>Heeft u een klacht?</h1>
-                        <h3>Laat hier uw feedback achter</h3>
-
-
-                        <div class="input">
-                            <label class="input__label" for="brin">Voornaam</label>
-                            <input type="text" id="brin" class="input__control input__control--m input__control--text">
+                            <label class="input__label" for="name">E-mail</label>
+                            <input type="text" class="input__control input__control--text input__control--large">
                         </div>
 
                         <div class="input">
-                            <label class="input__label" for="brin">Achternaam</label>
-                            <input type="text" id="brin" class="input__control input__control--m input__control--text">
-                        </div>
-
-                        <div class="input">
-                            <label class="input__label" for="email">E-mailadres</label>
-                            <input required="" type="email" id="email" class="input__control input__control--text">
-                        </div>
-
-                        <div class="input">
-                            <label class="input__label" for="textarea_voorbeeld">Tekstveld</label>
-                            <textarea id="textarea_voorbeeld" class="input__control input__control--m input__control--text"></textarea>
+                            <label class="input__label" for="name">Organisatie</label>
+                            <input type="text" class="input__control input__control--text input__control--large">
                         </div>
 
                         <div class="input">
                             <button type="submit" class="btn btn--primary">Verstuur</button>
                         </div>
-
                     </form>
-                </div>
-            </div>
+
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
         </div>
-
-
-
-
-
-
-
-
-
     </div>
 
 

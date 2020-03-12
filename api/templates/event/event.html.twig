@@ -19,6 +19,7 @@
     <div class="row theme--small-padding">
 
         <div class="col-md-8">
+
             <div class="content-background">
                 <div class="content" id="#event1">
                     <div class="row">
@@ -32,52 +33,99 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
+            <div class="content-background">
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Organisatie</h2>
+                            <p><em>Organisator</em></p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat
+                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="{{ path('app_organization_organization') }}" rel="noopener"
+                               class="btn btn--primary" target="_blank">Meer lezen <span
+                                        class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="https://picsum.photos/200" class="responsive" width="100%">
+                        </div>
+                    </div>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
+            <div class="content-background">
+                <div class="content">
+
+                    <h2>Leden</h2>
+
+                    <ul class="list list--card list--card-small">
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Lid</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Lid</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
         </div>
         <div class="col-md-4">
+
             <div class="content-background background--donkerblauw">
                 <div class="content">
+
                     <h2>Inschrijven</h2>
-                    <div class="form-control">
-                        <form>
-                            <div class="input combobox" id="multiple_combobox"></div>
-
-
-                            <div class="input">
-                                <button type="submit" class="btn btn--primary">Verder</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-8">
-            <div class="content-background">
-                <div class="content" id="#event1">
-                    <div class="row">
-                        <h2>De organisatie </h2>
-                        <div class="col-md-6">
-                            <img src="https://picsum.photos/300/300">
-                        </div>
-                        <div class="col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
-                                molestie
-                                orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
-                                tempor et
-                                id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
-                                ex. Nam
-                                malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
-                                orci. Nulla
-                                euismod vestibulum eros eu sagittis.</p>
-
+                    <form>
+                        <div class="input">
+                            <label class="input__label" for="name">Naam</label>
+                            <input type="text" class="input__control input__control--text input__control--large">
                         </div>
 
-                    </div>
-                </div>
-            </div>
+                        <div class="input">
+                            <label class="input__label" for="name">E-mail</label>
+                            <input type="text" class="input__control input__control--text input__control--large">
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="name">Organisatie</label>
+                            <input type="text" class="input__control input__control--text input__control--large">
+                        </div>
+
+                        <div class="input">
+                            <button type="submit" class="btn btn--primary">Verstuur</button>
+                        </div>
+                    </form>
+
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+
         </div>
-
-
     </div>
 
 
