@@ -1,86 +1,137 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-                    
-        <div class="row">
-        	<div class="col-md-8">
-        		<div class="content-background">
-        			<div class="content">
-        				Foto !
-						<ul class="list list--card list--card-small">
-							<li class="card card--small">
-								<a href="{{ path('app_organization_organization') }}" class="card__content">
-									<div class="card__thumb"
-										 style="background-image: url('https://picsum.photos/200')"></div>
-									<div class="card__body"><span class="card__title">Event</span>
-										<p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-											cupidatat</p>
-									</div>
-								</a>
-							</li>
-						</ul>
-        			</div>
-        		</div>
-				<br>
 
-			</div>
-        	<div class="col-md-4">
-        		<div class="content-background background--donkerblauw">
-        			<div class="content">
-        				<h2>Bijeenkomsten</h2>
-        				<ul class="list list--links list--chevrons">
-        					<li>
-        						<a href="#">Contactgegevens toevoegen</a>
-        					</li>
-        					<li>
-        						<a href="#">Onderwijsaanbieder toevoegen</a>
-        					</li>
-        					<li>
-        						<a href="#">Onderwijslocaties toevoegen</a>
-        					</li>
-        				</ul>
-
-        			</div>
-        		</div>
-				<br>
-
-        	</div>
-        </div>
-
-		<section class="row">
-            <div class="col-md-12">
-                <div class="content">
-                    <header class="content__header">                        
-                        <h1 class="content__header-title">Uitgelicht</h1>                        
+    <section class="row">
+        <div class="col-md-12">
+            <div class="content">
+                <header class="content__header">
+                    <header class="content__header">
+                        <h1 class="content__header-title">Home</h1>
                     </header>
+                </header>
+            </div><!-- ./content -->
+        </div><!-- ./col -->
+    </section>
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <div class="content-background">
+                <div class="content">
+
+                    <h2>Events</h2>
+
+                    <ul class="list list--card list--card-small">
+                        <li class="card card--small">
+                            <a href="{{ path('app_event_event') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Event</span>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat</p>
+                                </div>
+                            </a>
+                        <li class="card card--small">
+                            <a href="{{ path('app_event_event') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Event</span>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat</p>
+                                </div>
+                            </a>
+                        <li class="card card--small">
+                            <a href="{{ path('app_event_event') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Event</span>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h2>Organisaties</h2>
+
+                    <ul class="list list--card list--card-small">
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Organisatie</span>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat</p>
+                                </div>
+                            </a>
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Organisatie</span>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat</p>
+                                </div>
+                            </a>
+                        <li class="card card--small">
+                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Organisatie</span>
+                                    <p>voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
-        </section>
-        
-        <div class="row">
-        	<div class="col-md-12">
-        		<div class="content-background">
-        			<div class="content">
-        				Tekst
-        			</div>
-        		</div>
-        	</div>        
         </div>
 
+        <div class="col-md-4">
+            <div class="content-background background--donkerblauw">
+                <div class="content">
+                    <h2>Bijeenkomsten</h2>
+                    <ul class="list list--links list--chevrons">
+                        <li>
+                            <a href="#">Contactgegevens toevoegen</a>
+                        </li>
+                        <li>
+                            <a href="#">Onderwijsaanbieder toevoegen</a>
+                        </li>
+                        <li>
+                            <a href="#">Onderwijslocaties toevoegen</a>
+                        </li>
+                    </ul>
 
-<script>
-    /* Load collapse component */
-    System.import('/uno/components/collapse/collapse.js').then(function (module) {
+                </div>
+            </div>
+        </div>
 
-        /* Select all collapsible elements on the page */
-        var elements = document.querySelectorAll('main [x-uno-collapse]');
+    </div>
 
-        /* Initialize all collapses */
-        for (var i = 0; i < elements.length; i++) {
-            new module.Collapse(elements.item(i));
-        }
-    });
 
-</script>
+    <script>
+        /* Load collapse component */
+        System.import('/uno/components/collapse/collapse.js').then(function (module) {
+
+            /* Select all collapsible elements on the page */
+            var elements = document.querySelectorAll('main [x-uno-collapse]');
+
+            /* Initialize all collapses */
+            for (var i = 0; i < elements.length; i++) {
+                new module.Collapse(elements.item(i));
+            }
+        });
+
+    </script>
 
 {% endblock %}
