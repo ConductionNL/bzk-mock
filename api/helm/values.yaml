@@ -4,12 +4,12 @@
 
 settings:
   registryBase: docker.io/conduction
-  projectName: developer-bzk
-  name: developer-bzk
+  projectName: bzk-mock
+  name: bzk-mock
   title: Developer | Nederland
   version: V.0.1
   description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&#039;'
-  repro: 'https://github.com/ConductionNL/nl-design'
+  repro: 'https://github.com/ConductionNL/bzk-mock'
   domain: 'conduction.nl'
   domains:
     - conduction.nl

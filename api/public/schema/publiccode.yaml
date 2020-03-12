@@ -1,8 +1,8 @@
 publiccodeYmlVersion: "0.2"
 
-name: developer-bzk
+name: bzk-mock
 applicationSuite: commonground
-url: "https://github.com/ConductionNL/nl-design"
+url: "https://github.com/ConductionNL/bzk-mock"
 landingURL: "conduction.nl" 
 isBasedOn: "https://github.com/ConductionNL/Proto-component-commonground.git" 
 softwareVersion: "V.0.1"
@@ -37,7 +37,7 @@ usedBy:
   - Gemeente Hoorn
   
 
-roadmap: "https://github.com/ConductionNL/nl-design/blob/master/ROADMAP.md"
+roadmap: "https://github.com/ConductionNL/bzk-mock/blob/master/ROADMAP.md"
 
 developmentStatus: development
 
@@ -66,7 +66,7 @@ description:
 #          on multiple rows. You should note what the software
 #          is and why one should need it.
 
-    documentation: "https://github.com/ConductionNL/nl-design/blob/master/README.md"
+    documentation: "https://github.com/ConductionNL/bzk-mock/blob/master/README.md"
     apiDocumentation: "conduction.nl"
 #
 #    features:
