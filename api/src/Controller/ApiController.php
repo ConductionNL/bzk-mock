@@ -13,24 +13,27 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class DefaultController
+ * Class ApiController
  * @package App\Controller
  */
-class DefaultController extends AbstractController
+class ApiController extends AbstractController
 {
 
     /**
-     * @Route("/")
+     * @Route("/apis")
      * @Template
      */
 	public function indexAction()
-    {	
+    {
+    	return [];
+    }
+
+    /**
+     * @Route("/api")
+     * @Template
+     */
+	public function apiAction()
+    {
     	return [];
     }
 }
-
-
-
-
-
-

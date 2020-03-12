@@ -13,24 +13,18 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class DefaultController
+ * Class UserController
  * @package App\Controller
  */
-class DefaultController extends AbstractController
+class UserController extends AbstractController
 {
 
     /**
-     * @Route("/")
+     * @Route("/login")
      * @Template
      */
 	public function indexAction()
-    {	
+    {
     	return [];
     }
 }
-
-
-
-
-
-
