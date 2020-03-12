@@ -8,7 +8,7 @@
 
 
                 <header class="content__header">
-
+                    <a class="backlink" href="{{ path("app_event_index") }}">Events</a>
                     <h1 class="content__header-title">Event</h1>
 
                 </header>
@@ -16,28 +16,18 @@
         </div>
     </section>
 
-    <div class="row theme--large-padding">
+    <div class="row theme--small-padding">
 
         <div class="col-md-8">
             <div class="content-background">
                 <div class="content" id="#event1">
                     <div class="row">
-                        <h2>Evenement </h2>
-                        <div class="col-md-6">
-                            <img src="https://picsum.photos/300/300">
-                        </div>
-                        <div class="col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
-                                molestie
-                                orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
-                                tempor et
-                                id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
-                                ex. Nam
-                                malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
-                                orci. Nulla
-                                euismod vestibulum eros eu sagittis.</p>
-
-                        </div>
+                        <img src="https://picsum.photos/300/150" class="responsive" width="100%">
+                        <h2>Beschrijving</h2>
+                        <p>Duis hendrerit placerat ligula, placerat volutpat ligula. Nam commodo magna sed suscipit
+                            vehicula. Fusce non elementum nulla. Pellentesque nec hendrerit leo. Fusce cursus posuere
+                            nulla nec hendrerit. Nullam ullamcorper pulvinar odio, vitae varius quam lacinia sit amet.
+                            Donec porttitor volutpat urna. Pellentesque ac scelerisque elit, vel egestas diam.</p>
 
                     </div>
                 </div>
@@ -46,26 +36,16 @@
         <div class="col-md-4">
             <div class="content-background background--donkerblauw">
                 <div class="content">
-                    <h1>Zoeken naar Evenementen</h1>
+                    <h2>Inschrijven</h2>
                     <div class="form-control">
-                    <form>
-                        <div class="input combobox" id="multiple_combobox">
+                        <form>
+                            <div class="input combobox" id="multiple_combobox"></div>
 
-                            <label class="input__label" for="aanvraagstatus">Zoek en selecteer een of meerdere
-                                Evenementen</label>
-                            <div class="input__hint"></div>
 
-                            <ul class="combobox__input input__control input__control--text input__control--xl input__control--select"
-                                id="aanvraagstatus">
-                                <li id="#pitch1" data-id="0">Event 1</li>
-                                <li id="#pitch2" data-id="1">Event 2</li>
-                            </ul>
-                        </div>
-
-                        <div class="input">
-                            <button type="submit" class="btn btn--primary">Verder</button>
-                        </div>
-                    </form>
+                            <div class="input">
+                                <button type="submit" class="btn btn--primary">Verder</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -96,16 +76,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
 
 
     </div>
