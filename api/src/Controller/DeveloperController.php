@@ -18,25 +18,52 @@ use App\Service\CommonGroundService;
  * @Route("/developers")
  */
 class DeveloperController extends AbstractController
-{
-
+{	
+	
+	/**
+	 * @Route("/")
+	 * @Template
+	 */
+	public function dashboardAction()
+	{
+		return [];
+	}
+	
     /**
-     * @Route("/")
+     * @Route("/index")
      * @Template
      */
 	public function indexAction()
     {
     	return [];
-    }
-
-    /**
-     * @Route("/mijn-developer")
-     * @Template
-     */
-	public function mijnDeveloperAction()
-    {
-    	return [];
-    }
+	}
+	
+	/**
+	 * @Route("/me")
+	 * @Template
+	 */
+	public function meAction()
+	{
+		return [];
+	}
+	
+	/**
+	 * @Route("/toolkit")
+	 * @Template
+	 */
+	public function toolkitAction()
+	{
+		return [];
+	}
+	
+	/**
+	 * @Route("/{id}")
+	 * @Template
+	 */
+	public function viewAction($id)
+	{
+		return [];
+	}
 }
 
 
