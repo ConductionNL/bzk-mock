@@ -9,8 +9,6 @@
 
                 <header class="content__header">
                     <a class="backlink" href="{{ path("app_event_index") }}">Events</a>
-                    <h1 class="content__header-title">Event</h1>
-
                 </header>
             </div>
         </div>
@@ -54,7 +52,7 @@
                                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                                 cupidatat
                                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href="{{ path('app_organization_organization') }}" rel="noopener"
+                            <a href="{{ path('app_organization_view',{'id':1}) }}" rel="noopener"
                                class="btn btn--primary" target="_blank">Meer lezen <span
                                         class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
                         </div>
@@ -75,7 +73,7 @@
 
                     <ul class="list list--card list--card-small">
                         <li class="card card--small">
-                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                            <a href="{{ path('app_event_view',{'id':1}) }}" class="card__content">
                                 <div class="card__thumb"
                                      style="background-image: url('https://picsum.photos/200')"></div>
                                 <div class="card__body"><span class="card__title">Lid</span>
@@ -85,7 +83,7 @@
                             </a>
                         </li>
                         <li class="card card--small">
-                            <a href="{{ path('app_organization_organization') }}" class="card__content">
+                            <a href="{{ path('app_event_view',{'id':1}) }}" class="card__content">
                                 <div class="card__thumb"
                                      style="background-image: url('https://picsum.photos/200')"></div>
                                 <div class="card__body"><span class="card__title">Lid</span>
@@ -129,10 +127,7 @@
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
 
-        </div>
-    </div>
-
-
+        </div>    
     </div>
 
 

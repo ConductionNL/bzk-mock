@@ -13,12 +13,13 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class OrganisationController
+ * Class DeveloperController
  * @package App\Controller
- * @Route("/organisaties")
+ * @Route("/developers")
  */
-class OrganizationController extends AbstractController
+class DeveloperController extends AbstractController
 {	
+	
 	/**
 	 * @Route("/")
 	 * @Template
@@ -28,13 +29,13 @@ class OrganizationController extends AbstractController
 		return [];
 	}
 	
-	/**
-	 * @Route("/index")
-	 * @Template
-	 */
+    /**
+     * @Route("/index")
+     * @Template
+     */
 	public function indexAction()
-	{
-		return [];
+    {
+    	return [];
 	}
 	
 	/**
@@ -45,15 +46,24 @@ class OrganizationController extends AbstractController
 	{
 		return [];
 	}
-
-    /**
-     * @Route("/{id}")
-     * @Template
-     */
+	
+	/**
+	 * @Route("/toolkit")
+	 * @Template
+	 */
+	public function toolkitAction()
+	{
+		return [];
+	}
+	
+	/**
+	 * @Route("/{id}")
+	 * @Template
+	 */
 	public function viewAction($id)
-    {
-    	return [];
-    }
+	{
+		return [];
+	}
 }
 
 

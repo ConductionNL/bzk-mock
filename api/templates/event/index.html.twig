@@ -38,11 +38,7 @@
                                 orci. Nulla
                                 euismod vestibulum eros eu sagittis.</p>
 
-                            <a href="{{ path('app_event_event') }}">
-                                <button class="btn btn--primary"><span class="btn__content">Lees meer <i
-                                                class="btn__icon icon icon-arr-forward"></i></span>
-                                </button>
-                            </a>
+                            <a href="{{ path('app_event_view',{'id':1}) }}" rel="noopener" class="btn btn--primary" target="_blank">Lees meer<span class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
                         </div>
 
                     </div>
@@ -72,9 +68,9 @@
                                 orci. Nulla
                                 euismod vestibulum eros eu sagittis.</p>
 
-                            <a href="{{ path('app_event_event') }}">
+                            <a href="{{ path('app_event_view',{'id':1}) }}">
                                 <button class="btn btn--primary"><span class="btn__content">Lees meer <i
-                                                class="btn__icon icon icon-arr-forward"></i></span>
+                                            class="btn__icon icon icon-arr-forward"></i></span>
                                 </button>
                             </a>
                         </div>
@@ -110,9 +106,9 @@
                                 orci. Nulla
                                 euismod vestibulum eros eu sagittis.</p>
 
-                            <a href="{{ path('app_event_event') }}">
+                            <a href="{{ path('app_event_view',{'id':1}) }}">
                                 <button class="btn btn--primary"><span class="btn__content">Lees meer <i
-                                                class="btn__icon icon icon-arr-forward"></i></span>
+                                            class="btn__icon icon icon-arr-forward"></i></span>
                                 </button>
                             </a>
                         </div>
@@ -128,8 +124,9 @@
                 <div class="content">
                     <h2>Zoeken naar events </h2>
                     <div class="input combobox" id="example_combobox">
-                        <input class="combobox__input input__control input__control--text input__control--xl input__control--select"
-                               id="autocomplete-kleur">
+                        <input
+                            class="combobox__input input__control input__control--text input__control--xl input__control--select"
+                            id="autocomplete-kleur">
                     </div>
                 </div>
             </div>

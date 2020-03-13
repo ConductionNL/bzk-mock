@@ -13,11 +13,11 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class EventController
+ * Class DefaultController
  * @package App\Controller
- * @Route("/events")
+ * @Route("/news")
  */
-class EventController extends AbstractController
+class NewsController extends AbstractController
 {
 
     /**
@@ -28,19 +28,6 @@ class EventController extends AbstractController
     {	
     	return [];
     }
-
-    /**
-     * @Route("/{id}")
-     * @Template
-     */
-	public function viewAction($id)
-    {
-    	return [];
-    }
-
-
-
-
 }
 
 

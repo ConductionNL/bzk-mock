@@ -30,10 +30,10 @@ class PitchController extends AbstractController
     }
 
     /**
-     * @Route("/pitch")
+     * @Route("/{id}")
      * @Template
      */
-	public function pitchAction()
+	public function viewAction($id)
     {
     	return [];
     }
