@@ -30,10 +30,10 @@ class ApiController extends AbstractController
     }
 
     /**
-     * @Route("/api")
+     * @Route("/{id}")
      * @Template
      */
-	public function apiAction()
+	public function viewAction($id)
     {
     	return [];
     }
