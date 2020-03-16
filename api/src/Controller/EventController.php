@@ -27,7 +27,7 @@ class EventController extends AbstractController
     public function indexAction()
     {
         $events = [];
-        
+
         $event = [];
         $event["id"] = 1;
         $event['name'] = "Event";
