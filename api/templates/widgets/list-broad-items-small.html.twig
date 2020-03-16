@@ -7,10 +7,8 @@
                class="card__content">
                 <div class="card__thumb"
                      style="background-image: url('https://picsum.photos/id/1/200')"></div>
-                <div class="card__body"><span class="card__title">Artikel</span>
-                    <p>Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="card__body"><span class="card__title">{{ item.name }}</span>
+                    <p>{{ item.description }}
 
                         {% if item.writer is defined and item.writer is not empty %}
                             <br><br>
