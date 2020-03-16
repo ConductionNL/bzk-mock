@@ -15,9 +15,9 @@ use App\Service\CommonGroundService;
 /**
  * Class ApiController
  * @package App\Controller
- * @Route("/api")
+ * @Route("/repository")
  */
-class ApiController extends AbstractController
+class RepositoryController extends AbstractController
 {
 
     /**
