@@ -1,28 +1,51 @@
-{% extends "base.html.twig" %}
+﻿{% extends "base.html.twig" %}
 
 {% block content %}
 
 
     <div class="row">
-        <div class="col-md-8">
-
-            <div class="content-background" style="background-image: url('https://picsum.photos/860/300')">
-            	<div class="content">
-       				<div class="row">
-                        <div class="col-md-3 col-md-offset-9">             
-                        	<br />                   
-                            <button class="btn btn--primary">Challanges</button>  
-                        	<br />                   
-   
-                        	<br />                   
-                            <button class="btn btn--primary">Pitches</button>  
-                        	<br />                     
-                        	<br />                   
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.content -->
-            </div><!-- /.content-background -->
-        </div><!-- /.col -->
+            <div class="col-md-8">
+            <div class="content-background">
+                <div class="content">
+    
+                    <h2>Artikelen</h2>
+    
+                    <ul class="list list--card list--card-small">
+                        <li class="card card--small">
+                            <a href="{{ path('app_api_view', {'id':1}) }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Artikel</span> Excepteur sint occaecat
+                                    cupidatat
+                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card card--small">
+                            <a href="{{ path('app_api_view', {'id':1}) }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Artikel</span> Excepteur sint occaecat
+                                    cupidatat
+                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card card--small">
+                            <a href="{{ path('app_api_view', {'id':1}) }}" class="card__content">
+                                <div class="card__thumb"
+                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                <div class="card__body"><span class="card__title">Artikel</span> Excepteur sint occaecat
+                                    cupidatat
+                                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+    
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+        </div><!-- ./col -->
 
         <div class="col-md-4">
             <div class="content-background background--donkerblauw">

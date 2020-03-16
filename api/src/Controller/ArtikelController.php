@@ -15,7 +15,7 @@ use App\Service\CommonGroundService;
 /**
  * Class ArtikelenController
  * @package App\Controller
- * @Route("/artikel")
+ * @Route("/article")
  */
 class ArtikelController extends AbstractController
 {
