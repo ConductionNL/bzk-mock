@@ -60,28 +60,7 @@
 
                 <h2>Mijn Pitches</h2>
 
-                <ul class="list list--card list--card-small">
-                    <li class="card card--small">
-                        <a href="{{ path('app_pitch_view', { 'id': 1 }) }}" class="card__content">
-                            <div class="card__thumb"
-                                 style="background-image: url('https://picsum.photos/200')"></div>
-                            <div class="card__body"><span class="card__title">Event</span>
-                                Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco.
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card card--small">
-                        <a href="{{ path('app_pitch_view', { 'id': 1 }) }}" class="card__content">
-                            <div class="card__thumb"
-                                 style="background-image: url('https://picsum.photos/200')"></div>
-                            <div class="card__body"><span class="card__title">Event</span>
-                                Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco.
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                {% include 'widgets/list-broad-items-small.html.twig' with{'view':'app_pitch_view', 'items':pitches} %}
 
             </div><!-- ./content-background -->
         </div><!-- ./col -->
@@ -93,28 +72,7 @@
 
                 <h2>Mijn Evenementen</h2>
 
-                <ul class="list list--card list--card-small">
-                    <li class="card card--small">
-                        <a href="{{ path('app_event_view', { 'id': 1 }) }}" class="card__content">
-                            <div class="card__thumb"
-                                 style="background-image: url('https://picsum.photos/200')"></div>
-                            <div class="card__body"><span class="card__title">Event</span>
-                                Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco.
-                            </div>
-                        </a>
-                    </li>
-                    <li class="card card--small">
-                        <a href="{{ path('app_event_view', { 'id': 1 }) }}" class="card__content">
-                            <div class="card__thumb"
-                                 style="background-image: url('https://picsum.photos/200')"></div>
-                            <div class="card__body"><span class="card__title">Event</span>
-                                Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco.
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                {% include 'widgets/list-broad-items-small.html.twig' with{'view':'app_event_view', 'items':events} %}
 
             </div><!-- ./content-background -->
         </div><!-- ./col -->
