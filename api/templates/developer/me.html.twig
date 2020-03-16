@@ -190,28 +190,9 @@
     </div><!-- ./col -->
 
     <div class="col-md-4">
-        <div class="content-background background--donkerblauw">
-            <div class="content">
 
-                <h2>Menu</h2>
-                <ul class="list list--links list--chevrons">
-                    <li>
-                        <a href="{{ path('app_developer_me') }}">Mijn Developer</a>
-                    </li>
-                    <li>
-                        <a href="#">Toolkits</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('app_api_index') }}">API's</a>
-                    </li>
-                    <li>
-                        <a href="#">Design Guides</a>
-                    </li>
-                </ul>
+        {% include'widgets/developer-menu.html.twig' %}
 
-
-            </div><!-- ./col -->
-        </div><!-- ./row -->
     </div>
 
     <script>
