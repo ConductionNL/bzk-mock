@@ -13,9 +13,9 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class ArtikelenController
+ * Class ArtikelController
  * @package App\Controller
- * @Route("/article")
+ * @Route("/articles")
  */
 class ArtikelController extends AbstractController
 {
@@ -25,17 +25,52 @@ class ArtikelController extends AbstractController
      * @Template
      */
 	public function indexAction()
-    {	
-    	return [];
+    {
+        $artikelen = [];
+
+        $artikel = [];
+        $artikel['id'] = 1;
+        $artikel['name'] = "Artikel";
+        $artikel['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
+                    molestie orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
+                    tempor et id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
+                    ex. Nam malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
+                    orci. Nulla euismod vestibulum eros eu sagittis.";
+
+        $artikelen[] = $artikel;
+
+        $artikel = [];
+        $artikel['id'] = 2;
+        $artikel['name'] = "Artikel";
+        $artikel['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
+                    molestie orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
+                    tempor et id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
+                    ex. Nam malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
+                    orci. Nulla euismod vestibulum eros eu sagittis.";
+
+        $artikelen[] = $artikel;
+
+    	return ["artikelen"=>$artikelen];
     }
 
     /**
-     * @Route("/artikelen")
+     * @Route("/{id}")
      * @Template
      */
-	public function artikelenAction()
+	public function viewAction()
     {
-    	return [];
+       $artikel = [];
+       $artikel['name'] = "Artikel";
+       $artikel['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
+                    molestie orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
+                    tempor et id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
+                    ex. Nam malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
+                    orci. Nulla euismod vestibulum eros eu sagittis.";
+       $artikel['writer'] = "John Doe";
+       $artikel['createdAt'] = "20-1-2020";
+
+
+    	return ["artikel"=>$artikel];
     }
 
 }

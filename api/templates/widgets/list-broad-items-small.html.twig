@@ -1,0 +1,28 @@
+<ul class="list list--card list--card-small">
+
+    {% for item in items %}
+
+        <li class="card card--small">
+            <a href="{% if view is defined %}{{ path(view, {id: item.id}) }}{% else %}#{% endif %}"
+               class="card__content">
+                <div class="card__thumb"
+                     style="background-image: url('https://picsum.photos/id/1/200')"></div>
+                <div class="card__body"><span class="card__title">Artikel</span>
+                    <p>Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        {% if item.writer is defined and item.writer is not empty %}
+                            <br><br>
+                            <b>~</b>{{ item.writer }}, {{ item.createdAt }}{% if item.source is defined and item.source is not empty %}, {{ item.source }}{% endif %}
+                        {% endif %}
+                    </p>
+                </div>
+            </a>
+        </li>
+
+    {% endfor %}
+
+</ul>
+
+
