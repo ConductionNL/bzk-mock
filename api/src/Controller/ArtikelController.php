@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Service\CommonGroundService;
 
 /**
- * Class ArtikelenController
+ * Class ArtikelController
  * @package App\Controller
  * @Route("/article")
  */
