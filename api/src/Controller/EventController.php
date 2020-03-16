@@ -50,7 +50,16 @@ class EventController extends AbstractController
      */
     public function viewAction($id)
     {
-        return [];
+    	$event =[];
+    	$event["id"] = 1;
+    	$event['name'] = "Event";
+    	$event['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
+                                molestie orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
+                                tempor et id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo
+                                sed ex. Nam malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
+                                orci. Nulla euismod vestibulum eros eu sagittis.";
+    	
+    	return ["event" => $event];
     }
 
 
