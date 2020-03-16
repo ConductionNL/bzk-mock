@@ -38,9 +38,6 @@ class ArtikelController extends AbstractController
     	return [];
     }
 
-
-
-
 }
 
 

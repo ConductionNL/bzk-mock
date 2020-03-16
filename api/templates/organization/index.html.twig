@@ -43,7 +43,7 @@
                         <li class="card card--small">
                             <a href="{{ path('app_organization_view', { 'id': 1 }) }}" class="card__content">
                                 <div class="card__thumb"
-                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                     style="background-image: url('https://picsum.photos/id/1/200')"></div>
                                 <div class="card__body"><span class="card__title">Organisatie</span>
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                     ullamco
@@ -53,7 +53,7 @@
                         <li class="card card--small">
                             <a href="{{ path('app_organization_view', { 'id': 1 }) }}" class="card__content">
                                 <div class="card__thumb"
-                                     style="background-image: url('https://picsum.photos/200')"></div>
+                                     style="background-image: url('https://picsum.photos/id/1/200')"></div>
                                 <div class="card__body"><span class="card__title">Organisatie</span>
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                     ullamco
@@ -67,6 +67,12 @@
         </div>
 
         <div class="col-md-4">
+
+            {% include'widgets/organization-menu.html.twig' %}
+
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+
             <div class="content-background background--donkerblauw">
                 <div class="content">
                     <h2>Zoeken naar organisaties</h2>
@@ -83,6 +89,7 @@
                     </form>
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
+
         </div><!-- ./col -->
 
     </div><!-- ./row -->
