@@ -11,9 +11,7 @@
 
                     <p>{{ item.description }}</p>
 
-                    <a href="{% if view is defined %}{{ path(view, {id: item.id}) }}{% else %}#{% endif %}"
-                       rel="noopener" class="btn btn--primary">Lees
-                        meer<span class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
+                    <a href="{% if view is defined %}{{ path(view, {id: item.id}) }}{% else %}#{% endif %}" rel="noopener" class="btn btn--primary">Lees meer<span class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
                 </div>
 
             </div>
