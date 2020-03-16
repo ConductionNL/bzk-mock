@@ -7,7 +7,18 @@
         <div class="content">
             <header class="content__header">
                 <header class="content__header">
+
                     <h1 class="content__header-title">Mijn developer</h1>
+                    <div class="notification notification--warning" id="my-notification">
+                        <div class="notification__content">
+                            <div class="notification__type">TER INFORMATIE</div>
+                            <h2 class="notification__title">Op zondag is een api offline vanwege onderhoud</h2>
+                                                    </div>
+                        <button class="notification__close-button" onclick="myNotification.close()">
+                            <i class="icon icon-cross"></i>
+                            Sluit
+                        </button>
+                    </div>
                 </header>
             </header>
         </div><!-- ./content -->
@@ -160,5 +171,16 @@
             donutChart.draw();
         });
     </script>
+
+    <script>
+        let myNotification;
+
+        System.import('/uno/components/notification/notification.js').then(function (module) {
+            myNotification = new module.Notification(document.getElementById('my-notification'));
+        });
+    </script>
+
+
+
 
     {% endblock %}
