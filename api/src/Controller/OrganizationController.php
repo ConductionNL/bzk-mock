@@ -15,7 +15,7 @@ use App\Service\CommonGroundService;
 /**
  * Class OrganisationController
  * @package App\Controller
- * @Route("/organisaties")
+ * @Route("/organization")
  */
 class OrganizationController extends AbstractController
 {	
@@ -29,7 +29,7 @@ class OrganizationController extends AbstractController
 	}
 	
 	/**
-	 * @Route("/index")
+	 * @Route("/all")
 	 * @Template
 	 */
 	public function indexAction()

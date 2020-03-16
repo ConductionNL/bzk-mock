@@ -15,7 +15,7 @@ use App\Service\CommonGroundService;
 /**
  * Class DeveloperController
  * @package App\Controller
- * @Route("/developers")
+ * @Route("/developer")
  */
 class DeveloperController extends AbstractController
 {	
@@ -30,7 +30,7 @@ class DeveloperController extends AbstractController
 	}
 	
     /**
-     * @Route("/index")
+     * @Route("/all")
      * @Template
      */
 	public function indexAction()

@@ -199,17 +199,6 @@
             new module.SubMenuNavigation(submenus.item(i));
         }
     });
-
-    // Load example tabbing
-    System.import('/uno/components/tabs/tabs.js').then(function (module) {
-        // Select all .tab elements inside the examples on the page
-        var tabs = document.querySelectorAll('.example > .tab--example');
-
-        // Initialize all example tabs
-        for (var i = 0; i < tabs.length; i++) {
-            new module.Tabs(tabs.item(i));
-        }
-    });
 </script>
 
 </div>

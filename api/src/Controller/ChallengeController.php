@@ -30,10 +30,10 @@ class ChallengeController extends AbstractController
     }
 
     /**
-     * @Route("/challenges")
+     * @Route("/{id}")
      * @Template
      */
-	public function challengesAction()
+	public function viewAction($id)
     {
     	return [];
     }

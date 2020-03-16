@@ -31,14 +31,6 @@
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-                    <div class="donut-chart" id="complicancy-donut-chart">
-                        <h3 class="donut-chart__title">Complicancy</h3>
-                        <div class="donut-chart__chart">
-                            <canvas class="donut-chart__canvas"></canvas>
-                            <div class="donut-chart__inner">€ 2.000,00</div>
-                        </div>
-                        <span class="donut-chart__subtitle">over van € 10.000,00</span>
-                    </div>
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
 
@@ -142,6 +134,34 @@
         </div><!-- ./col -->
 
         <div class="col-md-4">
+
+            <div class="content-background">
+                <div class="content">
+                	<h2>Compliancy</h2>
+                	<div class="donut-chart donut-chart--groen" id="compliancy-chart">
+                        <div class="donut-chart__chart donut-chart--groen">
+                            <canvas class="donut-chart__canvas donut-chart--groen"></canvas>
+                            <div class="donut-chart__inner hidden" style="width: auto !imporant; height: auto !imporant;">80% compliant met nl api strategie</div>
+                        </div>
+                    </div>
+                    
+                   	<p>Deze api is voor 80% compliant met de NL API strategie</p>
+                    
+                    <p><button class="btn btn--primary">Lees compliancy scan</button></p>
+                </div><!-- ./content -->
+            </div><!-- ./content-background -->
+                    
+           <script>
+				System.import('/uno/components/donut-chart/donut-chart.js').then(function (module) {
+					var donutChart = new module.DonutChart(document.getElementById('compliancy-chart'));
+						donutChart.value = 80;
+						donutChart.draw();
+                        });
+           </script>
+            
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+            
             <div class="content-background background--donkerblauw">
                 <div class="content">
 
@@ -244,12 +264,5 @@
         </div><!-- ./col -->
     </div><!-- ./row -->
 
-    <script>
-        System.import('/uno/components/donut-chart/donut-chart.js').then(function (module) {
-            var donutChart = new module.DonutChart(document.getElementById('complicancy_donut-chart'));
-            donutChart.value = 80;
-            donutChart.draw();
-        });
-    </script>
 
 {% endblock %}
