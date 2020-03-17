@@ -31,13 +31,10 @@ class ArtikelController extends AbstractController
         for($i=1;$i<4;$i++) {
 
             $artikel = [];
-            $artikel['id'] = $i;
-            $artikel['name'] = "Artikel";
-            $artikel['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
-                    molestie orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
-                    tempor et id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
-                    ex. Nam malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
-                    orci. Nulla euismod vestibulum eros eu sagittis.";
+            $artikel['name'] = "Whitepaper Kwaliteitsaanpak ICTU Software Realisatie";
+            $artikel['description'] = "Met verregaande digitalisering wordt goede en betrouwbare software meer en meer belangrijk. Ook binnen de overheid. Daar ligt ook een uitdaging. ICTU wil met haar kwaliteitsaanpak daarbij helpen.";
+            $artikel['createdAt'] = "20-1-2020";
+            $artikel['source'] = "https://www.ictu.nl/";
 
             $artikelen[] = $artikel;
         }
@@ -52,14 +49,10 @@ class ArtikelController extends AbstractController
 	public function viewAction($id)
     {
        $artikel = [];
-       $artikel['name'] = "Artikel";
-       $artikel['description'] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu faucibus odio, nec
-                    molestie orci. Phasellus sollicitudin cursus ullamcorper. Nunc quis sapien non felis bibendum
-                    tempor et id tortor. Mauris felis sapien, condimentum ullamcorper tincidunt sit amet, commodo sed
-                    ex. Nam malesuada quis neque sit amet imperdiet. Ut nec est pharetra leo varius varius ac id
-                    orci. Nulla euismod vestibulum eros eu sagittis.";
-       $artikel['writer'] = "John Doe";
+       $artikel['name'] = "Whitepaper Kwaliteitsaanpak ICTU Software Realisatie";
+       $artikel['description'] = "Met verregaande digitalisering wordt goede en betrouwbare software meer en meer belangrijk. Ook binnen de overheid. Daar ligt ook een uitdaging. ICTU wil met haar kwaliteitsaanpak daarbij helpen.";
        $artikel['createdAt'] = "20-1-2020";
+       $artikel['source'] = "https://www.ictu.nl/";
 
 
     	return ["artikel"=>$artikel];

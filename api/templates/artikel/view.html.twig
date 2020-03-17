@@ -17,7 +17,7 @@
 
     <div class="row theme--small-padding">
 
-        <div class="col-md-12">
+        <div class="col-md-8">
 
             <div class="content-background">
                 <div class="content" id="#event1">
@@ -60,8 +60,12 @@
                     </div>
                 </div><!-- ./content -->
             </div><!-- ./content-background -->
-        </div>
-    </div>
+        </div><!-- /.col -->
+        <div class="col-md-4">
+        </div><!-- /.col -->
+
+            {% include 'widgets/organization.html.twig' %}
+    </div><!-- /.row -->
     <script>
         System.import('/uno/components/form/combobox.js').then(function (module) {
             let multipleComboBox = new module.Combobox(document.getElementById('multiple_combobox'), true);

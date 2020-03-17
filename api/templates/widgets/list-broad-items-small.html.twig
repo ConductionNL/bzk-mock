@@ -12,7 +12,7 @@
 
                         {% if item.writer is defined and item.writer is not empty %}
                             <br><br>
-                            <b>~</b>{{ item.writer }}, {{ item.createdAt }}{% if item.source is defined and item.source is not empty %}, {{ item.source }}{% endif %}
+                            <b>{{ item.writer }}</b> <span class="label label--rood">{{ item.createdAt }}</span>{% if item.source is defined and item.source is not empty %}<br>{{ item.source }}{% endif %}
                         {% endif %}
                     </p>
                 </div>
@@ -22,5 +22,9 @@
     {% endfor %}
 
 </ul>
+    
+{% if index is defined and index is not empty %}    	
+<a href="{{  path(index) }}" class="btn btn--primary btn--block" ><span class="btn__content">Bekijk meer  <i class="btn__icon icon icon-arr-forward" title="" role=""></i></span></a>
+{% endif %}
 
 
