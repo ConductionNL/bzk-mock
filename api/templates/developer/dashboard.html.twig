@@ -44,44 +44,14 @@
 
             <!-- Page Break -->
             <div style="height: 20px"></div>
-
-            <div class="content-background background--donkerblauw">
-                <div class="content">
-                    <h2>Bijeenkomsten</h2>
-                    <ul class="list list--links list--chevrons">
-                        <li>
-                            <a href="{{ path('app_event_view', { 'id': 1 }) }}"><b>12-3-2020 Amsterdam</b><br/>De staat
-                                van de stad</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('app_event_view', { 'id': 2 }) }}"><b>12-3-2020 Den Haag</b><br/>De staat
-                                van de stad</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('app_event_view', { 'id': 3 }) }}"><b>12-3-2020 Utrecht</b><br/>De staat
-                                van de stad</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('app_event_view', { 'id': 1 }) }}"><b>12-3-2020 Amsterdam</b><br/>De staat
-                                van de stad</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('app_event_view', { 'id': 2 }) }}"><b>12-3-2020 Den Haag</b><br/>De staat
-                                van de stad</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('app_event_view', { 'id': 3 }) }}"><b>12-3-2020 Utrecht</b><br/>De staat
-                                van de stad</a>
-                        </li>
-                    </ul>
-                </div><!-- /.content -->
-            </div><!-- /.content-background -->
+           
+            {% include'widgets/event-list.html.twig' %}
 
             <!-- Page Break -->
             <div style="height: 20px"></div>
 
             <h2>Artikelen</h2>
-            {% include 'widgets/list-broad-items-small.html.twig' with{'view':'app_artikel_view', 'items':artikelen} %}
+            {% include 'widgets/list-broad-items-small.html.twig' with{'view':'app_artikel_view','index':'app_artikel_index', 'items':artikelen} %}
 
 
         </div><!-- ./col -->

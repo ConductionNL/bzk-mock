@@ -108,7 +108,19 @@ class DeveloperController extends AbstractController
             $pitches[] = $pitch;
         }
 
-        return ["events" => $events, "pitches" => $pitches];
+        $repositories = [];
+        
+        for ($i = 1; $i < 4; $i++) {
+        	
+        	$repository= [];
+        	$repository["id"] = $i;
+        	$repository['name'] = "Mijn eerste applicatie";
+        	$repository['description'] = "Dit is echt een top applicatie die de wereld gaat verbeteren";
+        	$repositories[] = $repository;
+        }
+        
+        
+        return ["events" => $events, "pitches" => $pitches, 'repositories' => $repositories];
     }
 
     /**

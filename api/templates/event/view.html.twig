@@ -32,38 +32,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Page Break -->
-            <div style="height: 20px"></div>
-
-            <div class="content-background">
-                <div class="content">
-
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2>Organisatie</h2>
-                            <p><em>Organisator</em></p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat
-                                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href="{{ path('app_organization_view',{'id':1}) }}" rel="noopener"
-                               class="btn btn--primary" target="_blank">Meer lezen <span
-                                        class="btn__icon icon icon-arr-forward" title="" role=""></span></a>
-                        </div>
-                        <div class="col-md-5">
-                            <img src="https://picsum.photos/id/1/200" class="responsive" width="100%">
-                        </div>
-                    </div>
-                </div><!-- ./content -->
-            </div><!-- ./content-background -->
-
+           
             <!-- Page Break -->
             <div style="height: 20px"></div>
 
@@ -100,6 +69,12 @@
         </div>
         <div class="col-md-4">
 
+            {% include 'widgets/organization.html.twig' %}
+            
+            
+            <!-- Page Break -->
+            <div style="height: 20px"></div>
+            
             <div class="content-background background--donkerblauw">
                 <div class="content">
 
