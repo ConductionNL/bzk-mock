@@ -46,8 +46,22 @@ class DeveloperController extends AbstractController
 	{
 		return [];
 	}
-	
-	/**
+
+
+    /**
+     * @Route("/portfolio")
+     * @Template
+     */
+    public function portfolioAction()
+    {
+        return [];
+    }
+
+
+
+
+
+    /**
 	 * @Route("/toolkit")
 	 * @Template
 	 */
